@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.30;
+
 
 contract SimpleStorage {
     // if no value fo unit256 then equel 0
@@ -28,5 +29,21 @@ contract SimpleStorage {
 
     function addPerson(string memory _name, uint256 _favoriteNumber) public{
         listOfPeople.push(Person(_favoriteNumber, _name));
+    }
+}
+
+contract Animals{
+    struct Animal{
+        string name;
+        uint256 age;
+    }
+    Animal[] public listOfAnimal = [Animal({name:"Fox", age:10}), Animal({name:"Dog", age:4}), Animal({name:"Cat", age:3})];
+
+    function getAnimals(string memory _name, uint256 _age) public{
+        listOfAnimal.push(Animal(_name, _age));
+    }
+
+    function getLenght() public view returns(uint256){
+        return listOfAnimal.length;
     }
 }
