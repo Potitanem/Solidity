@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.30;
+pragma solidity ^0.8.24;
 
 
 contract SimpleStorage {
@@ -17,6 +17,7 @@ contract SimpleStorage {
     Person[] public listOfPeople; 
 
     // Person public  Den = Person({favoriteNumber: 10, name:"Den"});
+    mapping (string => uint256) public nameToFavouriteNumber;
 
     function store(uint256 _favoriteNumber) public {
         myfavoriteNumber = _favoriteNumber;
@@ -29,21 +30,7 @@ contract SimpleStorage {
 
     function addPerson(string memory _name, uint256 _favoriteNumber) public{
         listOfPeople.push(Person(_favoriteNumber, _name));
+        nameToFavouriteNumber[_name] = _favoriteNumber;
     }
 }
 
-contract Animals{
-    struct Animal{
-        string name;
-        uint256 age;
-    }
-    Animal[] public listOfAnimal = [Animal({name:"Fox", age:10}), Animal({name:"Dog", age:4}), Animal({name:"Cat", age:3})];
-
-    function getAnimals(string memory _name, uint256 _age) public{
-        listOfAnimal.push(Animal(_name, _age));
-    }
-
-    function getLenght() public view returns(uint256){
-        return listOfAnimal.length;
-    }
-}
