@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity 0.8.24;
 
 
 contract SimpleStorage {
     // if no value fo unit256 then equel 0
-    uint256 myfavoriteNumber; // 0
+    uint256 myFavoriteNumber; // 0
 
    // uint256[] listFavoriteNumber;
 
@@ -19,13 +19,13 @@ contract SimpleStorage {
     // Person public  Den = Person({favoriteNumber: 10, name:"Den"});
     mapping (string => uint256) public nameToFavouriteNumber;
 
-    function store(uint256 _favoriteNumber) public {
-        myfavoriteNumber = _favoriteNumber;
+    function store(uint256 _favoriteNumber) public virtual {
+        myFavoriteNumber = _favoriteNumber;
     }
     
     //view, pure    
     function retrieve() public view returns(uint256)  {
-        return myfavoriteNumber;
+        return myFavoriteNumber;
     }
 
     function addPerson(string memory _name, uint256 _favoriteNumber) public{
@@ -34,3 +34,8 @@ contract SimpleStorage {
     }
 }
 
+contract SimpleStorage2 {}
+
+contract SimpleStorage3 {}
+
+contract SimpleStorage4 {}
