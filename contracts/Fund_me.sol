@@ -30,6 +30,13 @@ contract FundMe{
         return ethAmountInUsd;
     } 
 
+    function convertUsdToEth(uint256 usdAmount) public view returns(uint256){
+        uint256 ethPrice = getPrice();
+        require(ethPrice > 0, "Price cannot be zero");
+        uint256 usdToEth = (1e18 * usdAmount) / ethPrice;
+        return usdToEth;
+    }
+
     function getVersion() public view returns (uint256){
         return AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306).version();
     }
@@ -37,3 +44,11 @@ contract FundMe{
 }
 
  
+ contract GetBTC{
+    function getPriceBTC() public view returns (uint256){
+         AggregatorV3Interface priceFeed = AggregatorV3Interface(0x5fb1616F78dA7aFC9FF79e0371741a747D2a7F22);
+         (,int256 answer,,,) = priceFeed.latestRoundData();
+         return uint256(answer) / 1e10;
+    }
+
+ }
