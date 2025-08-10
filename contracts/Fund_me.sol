@@ -12,6 +12,7 @@ contract FundMe{
     address[] public funders;
 
     mapping(address => uint256) public addressToAmountFunded;
+    mapping(address => uint256) public userCallCount;
 
     function fund() public payable {
         //Allow users to send $
@@ -20,6 +21,11 @@ contract FundMe{
         require(getConversionRate(msg.value) > minimumUsd, "Didn't send enough ETH");
         funders.push(msg.sender);
         addressToAmountFunded[msg.sender] += msg.value;
+        contributionCount();
+    }
+
+    function contributionCount() private {
+        userCallCount[msg.sender] += 1;
     }
 
     function getPrice() public view returns (uint256){
