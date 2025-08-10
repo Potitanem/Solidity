@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/PriceConverter.sol": "GetBTC"
+			"contracts/PriceConverter.sol": "PriceConverter"
 		},
 		"evmVersion": "prague",
 		"libraries": {},

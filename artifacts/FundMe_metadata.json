@@ -25,25 +25,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "usdAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "convertUsdToEth",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "fund",
 				"outputs": [],
@@ -64,51 +45,6 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "ethAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "getConversionRate",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getPrice",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getVersion",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -183,11 +119,19 @@
 			]
 		},
 		"contracts/Fund_me.sol": {
-			"keccak256": "0x097742362b96156188887635541d6def6a1ea31cf5ccecade36b9023e33b2784",
+			"keccak256": "0xe4d13dfe3ef559ea02ce5e563b18f07b990b053bc1bb4e902e02bd19ed2509f1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1ad3473674980b2a57482bf944df9cf7a53cee6c63c3ecb960c0428cddbd00b",
-				"dweb:/ipfs/QmSn6oVn2iKZZFyKmtEEAa9W51C3CDD4UkPbyCwPGhHG46"
+				"bzz-raw://bc1aaba807ffa54d37d61dd8bc2fb76e201eb33c803e672954e33fa8f43f19a4",
+				"dweb:/ipfs/QmZekqGcbZVB1bwK79LKCKBeV9HHXFxUEcYRH2PbtxnMdp"
+			]
+		},
+		"contracts/PriceConverter.sol": {
+			"keccak256": "0x9e1be799f3961c3de744560f1180b1a9c3520b92a56e7484dfe25d6536ad2c03",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://05e7a67f6fa88e9ab89d4a8659506f609b8c59abdc268d27444b2ba1d7847599",
+				"dweb:/ipfs/QmQMjBmDhS2C6U8gE7hpKwrbg4ETk5raqrqtGFGJRwc6v8"
 			]
 		}
 	},
