@@ -9,7 +9,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "funder",
 						"type": "address"
 					}
 				],
@@ -17,7 +17,7 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "amountFunded",
 						"type": "uint256"
 					}
 				],
@@ -105,6 +105,13 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -143,11 +150,11 @@
 			]
 		},
 		"contracts/Fund_me.sol": {
-			"keccak256": "0x778944b88e174859751bff4f7845f93a1553034e7fde61e546910d4477102eff",
+			"keccak256": "0x5bb858ae78007f21397e6d387324a7b68a00e7126b7d1e2f455b9fdfaa6e36b7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://880c560caaf38a5d56fdcb974d9ff2c61cc82b855328bf289629d334cbb2fdd1",
-				"dweb:/ipfs/QmV4Dwp6SLZMPYcHPvCTcUcHFMNNWjMZXC7xQZKYyxhhNm"
+				"bzz-raw://21fae416609f202d6df4722a4144aecdc5e938a296b7def9c8fb1c135b545a75",
+				"dweb:/ipfs/QmUK3b7zrUxfGkvvAv9kxnZaQp5GThhHRJE8hGgWYHATyE"
 			]
 		},
 		"contracts/MathLibrary.sol": {

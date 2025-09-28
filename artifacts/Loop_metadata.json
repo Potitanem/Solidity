@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "numbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pushNumbers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/TestLoop.sol": "Loop"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/TestLoop.sol": {
+			"keccak256": "0x013ac48bd25d2771b1f298be866e11248ede3e6c5f06bddc4729389ea6c186c5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://891962be1e64fb1d2b14ab87bce0069585d793a48673e5d08ac4d6bdf209f7f2",
+				"dweb:/ipfs/Qme7pWzCj3FacqLGvyaqfuz2VxD4stUERyPVBFdzGEzxb3"
+			]
+		}
+	},
+	"version": 1
+}
